@@ -5,15 +5,15 @@
 <head>
 	<link rel="stylesheet" href="styles.css">
 	<link
-      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
       rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
     />
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
 	<div class="container">
-      <h1 class="block-heading">Shopping Cart</h1>
+      <h1 class="block-heading">Shopping cart</h1>
       <p class="text-center">
         The customer is very important, the customer will be followed by the
         customer. Now, as an urn, I have no right to be in possession of
@@ -22,77 +22,105 @@
 
       <div class="row">
         <div class="col-lg-8">
-          <div class="product row">
-            <div class="col-md-4">
-              <img
-                src="https://mockuptree.com/wp-content/uploads/edd/2025/06/mockups-iphone.jpg"
-                class="img-fluid"
-                alt="Product Image"
-              />
-            </div>
-            <div class="col-md-8">
-              <h5 class="product-title" style="color: #3b99e0">
-                I am very sorry
-              </h5>
-              <p>Display: 5 inches<br />RAM: 4GB<br />Memory: 32GB</p>
-              <p>Quantity: <input type="number" value="0" min="0" /></p>
-              <p>Price: $120</p>
-            </div>
-          </div>
-
-          <div class="product row">
-            <div class="col-md-4">
-              <img
-                src="https://mockuptree.com/wp-content/uploads/edd/2025/06/mockups-iphone.jpg"
-                class="img-fluid"
-                alt="Product Image"
-              />
-            </div>
-            <div class="col-md-8">
-              <h5 class="product-title" style="color: #3b99e0">
-                I am very sorry
-              </h5>
-              <p>Display: 5 inches<br />RAM: 4GB<br />Memory: 32GB</p>
-              <p>Quantity: <input type="number" value="1" min="0" /></p>
-              <p>Price: $120</p>
+          <div class="product">
+            <div class="row mb-3">
+              <div class="col-4">
+                <img
+                  src="https://mockuptree.com/wp-content/uploads/edd/2025/06/mockups-iphone.jpg"
+                  class="img-fluid"
+                  alt="Product Image"
+                />
+              </div>
+              <div class="col-8">
+                <h5 class="text-primary">I am very sorry</h5>
+                <p>
+                  Display: 5 inches <br />
+                  RAM: 4GB <br />
+                  Memory: 32GB
+                </p>
+                <label>Quantity:</label>
+                <input
+                  type="number"
+                  value="0"
+                  class="form-control"
+                  style="width: 60px; display: inline-block"
+                />
+                <span class="float-right">$120</span>
+              </div>
             </div>
           </div>
 
-          <div class="product row">
-            <div class="col-md-4">
-              <img
-                src="https://mockuptree.com/wp-content/uploads/edd/2025/06/mockups-iphone.jpg"
-                class="img-fluid"
-                alt="Product Image"
-              />
+          <div class="product">
+            <div class="row mb-3">
+              <div class="col-4">
+                <img
+                  src="https://mockuptree.com/wp-content/uploads/edd/2025/06/mockups-iphone.jpg"
+                  class="img-fluid"
+                  alt="Product Image"
+                />
+              </div>
+              <div class="col-8">
+                <h5 class="text-primary">I am very sorry</h5>
+                <p>
+                  Display: 5 inches <br />
+                  RAM: 4GB <br />
+                  Memory: 32GB
+                </p>
+                <label>Quantity:</label>
+                <input
+                  type="number"
+                  value="1"
+                  class="form-control"
+                  style="width: 60px; display: inline-block"
+                />
+                <span class="float-right">$120</span>
+              </div>
             </div>
-            <div class="col-md-8">
-              <h5 class="product-title" style="color: #3b99e0">
-                I am very sorry
-              </h5>
-              <p>Display: 5 inches<br />RAM: 4GB<br />Memory: 32GB</p>
-              <p>Quantity: <input type="number" value="1" min="0" /></p>
-              <p>Price: $120</p>
+          </div>
+
+          <div class="product">
+            <div class="row mb-3">
+              <div class="col-4">
+                <img
+                  src="https://mockuptree.com/wp-content/uploads/edd/2025/06/mockups-iphone.jpg"
+                  class="img-fluid"
+                  alt="Product Image"
+                />
+              </div>
+              <div class="col-8">
+                <h5 class="text-primary">I am very sorry</h5>
+                <p>
+                  Display: 5 inches <br />
+                  RAM: 4GB <br />
+                  Memory: 32GB
+                </p>
+                <label>Quantity:</label>
+                <input
+                  type="number"
+                  value="1"
+                  class="form-control"
+                  style="width: 60px; display: inline-block"
+                />
+                <span class="float-right">$120</span>
+              </div>
             </div>
           </div>
         </div>
-
         <div class="col-lg-4">
           <div class="summary">
-            <h5>Summary</h5>
-            <p>Subtotal: $360</p>
-            <p>Discount: $0</p>
-            <p>Shipping: $0</p>
-            <hr />
-            <p><strong>Total: $360</strong></p>
-            <button class="btn btn-checkout">Checkout</button>
+            <h4>Summary</h4>
+            <p>Subtotal: <span class="float-right">$360</span></p>
+            <p>Discount: <span class="float-right">$0</span></p>
+            <p>Shipping: <span class="float-right">$0</span></p>
+            <h5>Total: <span class="float-right">$360</span></h5>
+            <button class="btn btn-checkout btn-block">checkout</button>
           </div>
         </div>
       </div>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="./script.js">
 </script>
